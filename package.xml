@@ -42,7 +42,7 @@
   <doc_depend>sensor_msgs</doc_depend>
   <doc_depend>std_msgs</doc_depend>
   <doc_depend>unique_id</doc_depend>
-  <doc_depend>uuid_msgs</doc_depend>
+  <doc_depend>unique_identifier_msgs</doc_depend>
   -->
 
   <!-- mocking & simulation dependencies -->
@@ -60,7 +60,7 @@
   <exec_depend>py_trees_msgs</exec_depend>
   <exec_depend>rclpy</exec_depend>
   <exec_depend>std_msgs</exec_depend>
-  <exec_depend>uuid_msgs</exec_depend>
+  <exec_depend>unique_identifier_msgs</exec_depend>
   <exec_depend>unique_id</exec_depend>
   <!--
   <exec_depend>actionlib</exec_depend>

@@ -18,7 +18,7 @@ py_trees objects and ros messages.
 ##############################################################################
 
 import unique_id
-import uuid_msgs.msg as uuid_msgs
+import unique_identifier_msgs.msg as unique_identifier_msgs
 import py_trees
 import py_trees_msgs.msg as py_trees_msgs
 
@@ -109,7 +109,7 @@ def behaviour_to_msg(behaviour):
     msg.name = behaviour.name
     msg.class_name = str(behaviour.__module__) + '.' + str(type(behaviour).__name__)
     msg.own_id = unique_id.toMsg(behaviour.id)
-    msg.parent_id = unique_id.toMsg(behaviour.parent.id) if behaviour.parent else uuid_msgs.UniqueID()
+    msg.parent_id = unique_id.toMsg(behaviour.parent.id) if behaviour.parent else unique_identifier_msgs.UniqueID()
     msg.child_ids = [unique_id.toMsg(child.id) for child in behaviour.iterate(direct_descendants=True) if not child.id == behaviour.id]
 
     tip = behaviour.tip()
